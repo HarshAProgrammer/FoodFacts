@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="openfoodfacts.github.scrachx.openfood.features.categories.fragment.CategoryListFragment">
+    tools:context="openfoodfacts.rackluxury.scrachx.openfood.features.categories.fragment.CategoryListFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler"
@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         tools:listitem="@layout/category_recycler_item" />
 
-    <openfoodfacts.github.scrachx.openfood.features.shared.layouts.FastScroller
+    <openfoodfacts.rackluxury.scrachx.openfood.features.shared.layouts.FastScroller
         android:id="@+id/fast_scroller"
         android:layout_width="24dp"
         android:layout_height="match_parent"

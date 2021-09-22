@@ -26,7 +26,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <openfoodfacts.github.scrachx.openfood.features.shared.views.TipBox
+    <openfoodfacts.rackluxury.scrachx.openfood.features.shared.views.TipBox
         android:id="@+id/tipBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

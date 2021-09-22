@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<openfoodfacts.github.scrachx.openfood.camera.CameraSourcePreview xmlns:android="http://schemas.android.com/apk/res/android"
+<openfoodfacts.rackluxury.scrachx.openfood.camera.CameraSourcePreview xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/camera_preview"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <openfoodfacts.github.scrachx.openfood.camera.GraphicOverlay
+    <openfoodfacts.rackluxury.scrachx.openfood.camera.GraphicOverlay
         android:id="@+id/camera_preview_graphic_overlay"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
@@ -35,4 +35,4 @@
 
     </FrameLayout>
 
-</openfoodfacts.github.scrachx.openfood.camera.CameraSourcePreview>
+</openfoodfacts.rackluxury.scrachx.openfood.camera.CameraSourcePreview>

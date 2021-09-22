@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="openfoodfacts.github.scrachx.openfood"
+    package="openfoodfacts.rackluxury.scrachx.openfood"
     android:installLocation="auto">
 
     <!-- Add permission to query apps for CustomTabs -->
@@ -43,7 +43,7 @@
         android:required="false" />
 
     <application
-        android:name=".app.OFFApplication"
+        android:name="openfoodfacts.rackluxury.scrachx.openfood.app.OFFApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -73,7 +73,7 @@
             tools:node="remove" />
 
         <provider
-            android:name=".utils.SearchSuggestionProvider"
+            android:name="openfoodfacts.rackluxury.scrachx.openfood.utils.SearchSuggestionProvider"
             android:authorities="${applicationId}.utils.SearchSuggestionProvider"
             android:exported="false" />
 
@@ -83,7 +83,7 @@
             tools:node="remove" />
 
         <provider
-            android:name=".utils.GenericFileProvider"
+            android:name="openfoodfacts.rackluxury.scrachx.openfood.utils.GenericFileProvider"
             android:authorities="${applicationId}.provider"
             android:exported="false"
             android:grantUriPermissions="true">
@@ -93,7 +93,7 @@
         </provider>
 
         <activity
-            android:name=".features.splash.SplashActivity"
+            android:name="openfoodfacts.rackluxury.scrachx.openfood.features.splash.SplashActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/SplashTheme">
@@ -109,7 +109,7 @@
         </activity>
 
         <activity
-            android:name=".features.MainActivity"
+            android:name="openfoodfacts.rackluxury.scrachx.openfood.features.MainActivity"
             android:exported="true"
             android:launchMode="singleTop"
             android:windowSoftInputMode="stateUnchanged|adjustResize">
@@ -136,15 +136,15 @@
 
         </activity>
         <activity
-            android:name=".features.product.view.ProductViewActivity"
+            android:name="openfoodfacts.rackluxury.scrachx.openfood.features.product.view.ProductViewActivity"
             android:exported="true"
             android:launchMode="singleTop"
-            android:parentActivityName=".features.MainActivity"
+            android:parentActivityName="openfoodfacts.rackluxury.scrachx.openfood.features.MainActivity"
             android:windowSoftInputMode="stateUnchanged|adjustResize">
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".features.MainActivity" />
+                android:value="openfoodfacts.rackluxury.scrachx.openfood.features.MainActivity" />
 
             <intent-filter
                 android:autoVerify="true"
@@ -163,40 +163,40 @@
         </activity>
 
         <activity
-            android:name=".features.login.LoginActivity"
-            android:parentActivityName=".features.MainActivity"
+            android:name="openfoodfacts.rackluxury.scrachx.openfood.features.login.LoginActivity"
+            android:parentActivityName="openfoodfacts.rackluxury.scrachx.openfood.features.MainActivity"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".features.MainActivity" />
+                android:value="openfoodfacts.rackluxury.scrachx.openfood.features.MainActivity" />
         </activity>
 
-        <activity android:name=".features.ImagesManageActivity" />
+        <activity android:name="openfoodfacts.rackluxury.scrachx.openfood.features.ImagesManageActivity" />
 
-        <activity android:name=".features.ImageZoomActivity" />
+        <activity android:name="openfoodfacts.rackluxury.scrachx.openfood.features.ImageZoomActivity" />
 
-        <activity android:name=".features.ImagesSelectActivity" />
+        <activity android:name="openfoodfacts.rackluxury.scrachx.openfood.features.ImagesSelectActivity" />
 
         <activity
-            android:name=".features.scanhistory.ScanHistoryActivity"
-            android:parentActivityName=".features.MainActivity"
+            android:name="openfoodfacts.rackluxury.scrachx.openfood.features.scanhistory.ScanHistoryActivity"
+            android:parentActivityName="openfoodfacts.rackluxury.scrachx.openfood.features.MainActivity"
             android:theme="@style/OFFTheme"
             android:windowSoftInputMode="stateUnchanged|adjustResize">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".features.MainActivity" />
+                android:value="openfoodfacts.rackluxury.scrachx.openfood.features.MainActivity" />
         </activity>
 
         <activity
-            android:name=".features.compare.ProductCompareActivity"
-            android:parentActivityName=".features.MainActivity"
+            android:name="openfoodfacts.rackluxury.scrachx.openfood.features.compare.ProductCompareActivity"
+            android:parentActivityName="openfoodfacts.rackluxury.scrachx.openfood.features.MainActivity"
             android:theme="@style/OFFTheme" />
 
         <activity
-            android:name=".features.categories.activity.CategoryActivity"
+            android:name="openfoodfacts.rackluxury.scrachx.openfood.features.categories.activity.CategoryActivity"
             android:exported="true"
             android:launchMode="singleTop"
-            android:parentActivityName=".features.MainActivity">
+            android:parentActivityName="openfoodfacts.rackluxury.scrachx.openfood.features.MainActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
@@ -204,13 +204,13 @@
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".features.MainActivity" />
+                android:value="openfoodfacts.rackluxury.scrachx.openfood.features.MainActivity" />
             <meta-data
                 android:name="android.app.searchable"
                 android:resource="@xml/searchable" />
         </activity>
 
-        <activity android:name=".features.welcome.WelcomeActivity" />
+        <activity android:name="openfoodfacts.rackluxury.scrachx.openfood.features.welcome.WelcomeActivity" />
 
         <activity
             android:name="com.canhub.cropper.CropImageActivity"
@@ -218,7 +218,7 @@
 
 
         <activity
-            android:name=".features.search.ProductSearchActivity"
+            android:name="openfoodfacts.rackluxury.scrachx.openfood.features.search.ProductSearchActivity"
             android:exported="true"
             android:theme="@style/OFFTheme.NoActionBar">
 
@@ -284,13 +284,13 @@
         </activity>
 
         <activity
-            android:name=".features.additives.AdditiveListActivity"
+            android:name="openfoodfacts.rackluxury.scrachx.openfood.features.additives.AdditiveListActivity"
             android:exported="true"
             android:launchMode="singleTop"
-            android:parentActivityName=".features.MainActivity">
+            android:parentActivityName="openfoodfacts.rackluxury.scrachx.openfood.features.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".features.MainActivity" />
+                android:value="openfoodfacts.rackluxury.scrachx.openfood.features.MainActivity" />
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
@@ -302,22 +302,22 @@
         </activity>
 
         <activity
-            android:name=".features.scan.ContinuousScanActivity"
+            android:name="openfoodfacts.rackluxury.scrachx.openfood.features.scan.ContinuousScanActivity"
             android:screenOrientation="portrait"
             android:theme="@style/OFFTheme.NoActionBar" />
         <activity
-            android:name=".features.product.edit.ProductEditActivity"
+            android:name="openfoodfacts.rackluxury.scrachx.openfood.features.product.edit.ProductEditActivity"
             android:screenOrientation="portrait"
             android:theme="@style/OFFTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
 
-        <activity android:name=".features.product.view.CalculateDetailsActivity" />
+        <activity android:name="openfoodfacts.rackluxury.scrachx.openfood.features.product.view.CalculateDetailsActivity" />
 
         <activity
-            android:name=".features.productlists.ProductListsActivity"
-            android:parentActivityName=".features.MainActivity"
+            android:name="openfoodfacts.rackluxury.scrachx.openfood.features.productlists.ProductListsActivity"
+            android:parentActivityName="openfoodfacts.rackluxury.scrachx.openfood.features.MainActivity"
             android:theme="@style/OFFTheme" />
-        <activity android:name=".features.productlist.ProductListActivity" />
+        <activity android:name="openfoodfacts.rackluxury.scrachx.openfood.features.productlist.ProductListActivity" />
     </application>
 
 </manifest>

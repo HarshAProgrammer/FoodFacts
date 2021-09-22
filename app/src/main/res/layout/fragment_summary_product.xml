@@ -267,7 +267,7 @@
                 android:visibility="gone"
                 tools:visibility="visible">
 
-                <openfoodfacts.github.scrachx.openfood.features.shared.views.TipBox
+                <openfoodfacts.rackluxury.scrachx.openfood.features.shared.views.TipBox
                     android:id="@+id/tipBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -372,7 +372,7 @@
                     tools:text="@string/add_nutrition_facts_for_nutriscore"
                     tools:visibility="visible" />
 
-                <openfoodfacts.github.scrachx.openfood.features.shared.views.TipBox
+                <openfoodfacts.rackluxury.scrachx.openfood.features.shared.views.TipBox
                     android:id="@+id/tipBoxEcoScore"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

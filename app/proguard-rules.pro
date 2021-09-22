@@ -17,7 +17,7 @@
 #}
 
 -keep class **$$JsonObjectMapper { *; }
--keep class openfoodfacts.github.scrachx.openfood.network.services.* { *; }
+-keep class openfoodfacts.rackluxury.scrachx.openfood.network.services.* { *; }
 
 # Keep Jackson classes ( https://sourceforge.net/p/proguard/discussion/182456/thread/e4d73acf/ )
 -keepnames class org.codehaus.jackson.** { *; }
@@ -47,7 +47,7 @@ public static java.lang.String TABLENAME;
 }
 -keep class **$Properties { *; }
 # GreenDAO entities
--keep class openfoodfacts.github.scrachx.openfood.models.** { *; }
+-keep class openfoodfacts.rackluxury.scrachx.openfood.models.** { *; }
 
 # https://github.com/CanHub/Android-Image-Cropper#step-4-add-this-line-to-your-proguard-config-file
 -keep class androidx.appcompat.widget.** { *; }
