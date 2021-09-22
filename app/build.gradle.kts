@@ -216,7 +216,7 @@ dependencies {
 }
 
 android {
-    compileSdk = 30
+    compileSdk = 31
 
     testBuildType = obtainTestBuildType()
 
@@ -230,10 +230,10 @@ android {
         applicationId = "openfoodfacts.github.scrachx.openfood"
 
         minSdk = 16
-        targetSdk = 30
+        targetSdk = 31
 
-        versionCode = 433
-        versionName = "3.6.8"
+        versionCode = 1
+        versionName = "1.0.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
